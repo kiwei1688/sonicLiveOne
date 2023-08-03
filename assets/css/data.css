@@ -1,0 +1,168 @@
+
+/* step */
+
+section[class^=step] {
+  display: none;
+}
+
+section.step1 {
+  display: block;
+}
+
+#form.success .receive,  #form.success .chg_p02, #form.success .phone {
+  display: none !important;
+}
+
+#form.success .download_app,  #form.success .chg_p03 {
+  display: block !important;
+}
+
+/* testReciprocal */
+
+.circleProgress-wrapper{
+  position: relative;
+  top:40px;
+  left:-7px;
+  width: 52px;
+  height: 52px;
+  margin: 10px auto 0 auto;
+  -ms-transform: scale(2,2); 
+  -webkit-transform: scale(2,2); 
+  transform: scale(2,2); 
+}
+.circleProgress-wrapper .time-text {
+  position: absolute;
+  left:0;
+  top:0;
+  color: #000;
+  font-size: 26px;
+  width:52px;
+  height:52px;
+  text-align: center;
+  z-index: 999;
+  line-height:48px;
+}
+.wrapper{
+  width: 26px;
+  height: 52px;
+  position: absolute;
+  top:0;
+  overflow: hidden;
+}
+.right{
+  right:3px;
+}
+.left{
+  left:0px;
+}
+.circleProgress{
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  position: absolute;
+  top:0;
+  transform: rotate(45deg);
+  border:4px solid transparent;
+  z-index: 9999;
+}
+.rightcircle{
+  border-top:4px solid #fc316b;
+  border-right:4px solid #fc316b;
+  right:0;
+}
+.rightAni{
+  animation: circleProgressLoad-right 10s linear;
+}
+.leftcircle{
+  border-bottom:4px solid #fc316b;
+  border-left:4px solid #fc316b;
+  left:4px;
+
+}
+.leftAni{
+  animation: circleProgressLoad-left 10s linear;
+}
+@keyframes circleProgressLoad-right{
+  0%,50%{
+      transform: rotate(45deg);
+  }
+  100%{
+      transform: rotate(-135deg);
+
+  }
+}
+@keyframes circleProgressLoad-left{
+  0%{
+      transform: rotate(45deg);
+  }
+  51%,100%{
+      transform: rotate(-135deg);
+  }
+}
+
+
+@media screen and (max-width:1024px) {
+  .circleProgress-wrapper{
+      position:relative;
+      top:3.90625vw;
+      left:-0.6835vw;
+      width: 5.078vw;
+      height: 5.078vw;
+  }
+  .circleProgress-wrapper .time-text {
+      font-size: 2.539vw;
+      width:5.078vw;
+      height:5.078vw;
+      line-height:4.6787vw;
+  }
+  .wrapper{
+      width: 2.539vw;
+      height: 5.078vw;
+  }
+  .right{
+      right:0.2929vw;
+  }
+  .circleProgress{
+      width: 4.4921vw;
+      height: 4.4921vw;
+      border:0.3906vw solid transparent;
+  }
+  .rightcircle{
+      border-top:0.3906vw solid #fc316b;
+      border-right:0.3906vw solid #fc316b;
+  }
+  .leftcircle{
+      border-bottom:0.3906vw solid #fc316b;
+      border-left:0.3906vw solid #fc316b;
+      left:0.3906vw;
+  }
+}
+
+@media screen and (max-width:992px) {
+  /* .circleProgress{
+      width: 4.48vw;
+      height: 4.48vw;
+      border:0.37vw solid transparent;
+  } */
+}
+
+@media screen and (max-width:768px) {
+  
+}
+
+@media screen and (max-width:640px) {
+  
+}
+
+@media screen and (max-width:480px) {
+  
+}
+
+@media screen and (max-width:414px) {
+  
+}
+
+@media screen and (max-width:375px) {
+  
+}

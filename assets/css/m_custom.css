@@ -1,0 +1,1026 @@
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing:border-box;
+  box-sizing: border-box;
+}
+.none{display:none !important;}
+.bos{border:1px solid #ff0000}
+
+img { width: 100%; }
+a{text-decoration: none; display:block;}
+/* a:hover { text-decoration: none; } */
+a:focus, input:focus, button:focus, textarea:focus, select:focus { outline: 0; text-decoration: none; }
+ul,li { margin: 0; padding: 0; list-style: none; }
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+span { vertical-align: middle; }
+p { margin: 0; line-height: 1.5; }
+html, body { min-height: 100%;}
+body{
+   margin:0;
+   padding:0;
+   position: relative;
+   background-color:#fff;
+   /* background:url('m_images/m_bg2.jpg') top center no-repeat;
+   background-size:cover; */
+   font-family: arial,'Microsoft YaHei','SimHei','Microsoft JhengHei',"微軟正黑體";
+ }
+
+body.overhidden{
+overflow:hidden; /*  鎖住body scrollbar */
+}
+/*  clearfix */
+.clearfix {display: block;}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix {height: 1%;}
+
+/*   通用按鈕設定  */ 
+.active{background-color:#0441f0 !important;}
+.active a{color:#fff !important;}
+.listAddbg{
+  background:url('./m_image/list_bgH.jpg') top center no-repeat !important;
+  background-size:cover !important;
+}
+
+.right_name_goal,.left_name_goal{color:#FFFF33}
+.right_name_goal{padding:0 3vw 0 0}
+.left_name_goal{padding:0 0 0 3vw}
+
+.left_name_title,.right_name_title{color:#00d2ff}
+
+.backTop{
+  position:fixed;
+  bottom:19vw;
+  width:100%;
+  z-index:999;
+}
+.backTop a{
+  display:block;
+  width:30vw;
+  height:8vw;
+  font-size:3vw;
+  line-height:8vw;
+  color:#fff;
+  text-align:center;
+  background-color:#ea4751;
+  border-radius: 2vw;
+  margin:0 auto;
+}
+
+/* 上方跑马灯 */
+.head_marquee{
+  display:block;
+  width:100%;
+  height:7.8125vw;
+  background-color:#000;
+  border-bottom:2px solid #d74554;
+  overflow:hidden;
+}
+.head_marquee .mar_txt{
+  position:relative;
+  width:80%;
+  font-size:3.2226vw;
+  color:#fff;
+  margin:1.4648vw auto;
+}
+.head_marquee .mar_txt:before{
+  content:'';
+  width:4.1992vw;
+  height:4.1992vw;
+  position:absolute;
+  top:-0.1718vw;
+  left:-5.371vw;
+  background:url('./m_image/m_arrow.png') top center no-repeat;
+}
+.total_wrap{
+ position:relative;
+ width:100%;
+ height:100%;
+ background:url('./m_image/m_bg2.jpg') top center no-repeat;
+ background-size:cover;
+}
+.player_page{
+  background:url('./m_image/m_bg.jpg') top center no-repeat !important;
+ }
+.pc_wrap{
+  position:relative;
+  width:100%;
+  height:100%;
+  margin:0 auto 5vw auto;
+}
+
+/* header區塊 */
+header{
+  position:relative;
+  width:100%;
+  /* height:55.0781vw; */
+}
+header nav{
+  position:absolute;
+  top:0;
+  left:0;
+}
+header .m_logo{
+  width:41.0156vw;
+  height:14.8437vw;
+  margin:1.2vw auto;
+  background:url('./m_image/m_logo.png') top center no-repeat;
+  background-size:cover;
+}
+
+/* 直播页面__新闻区块 */
+a.prev{
+  position:absolute;
+  top:5vw;
+  left:5vw;
+  width:4.129vw;
+  height:9.5976vw;
+  z-index:999;
+}
+
+header .main_btn{
+  width:77.1484vw;
+  height:27.9296vw;
+  margin:0 auto;
+}
+header .main_btn ul li{
+  display:inline-block;
+  width:38.0859vw;
+  height:8vw;
+  font-size:4.3945vw;
+  line-height:8.3007vw;
+  text-align:center;
+  border-radius: 1.1718vw;
+  background-color:#00d2ff;
+}
+.main_btn ul li + li{
+  margin: 0.9765vw 0 0 0;
+}
+.main_btn ul li:nth-child(3),.main_btn ul li:nth-child(5){
+  margin-left:0.3vw;
+}
+.main_btn ul li:first-child{
+  width:100%;
+}
+.main_btn ul li a{
+  color:#0441f0;
+}
+/* .data_box ~ .data_box{border:1px solid #fff100} */
+/* content區塊 */
+section.content{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  overflow:hidden;
+}
+.content .top_info{
+  overflow:hidden; /* 清除浮動 */
+}
+.top_info ~ .top_info{ /* 第二個以後的元素都會套用css */
+  margin-top:10vw;
+} 
+.content .today_time{
+  float:left;
+  /* width:40.2343vw; */
+  width:49%;
+  height:10vw;
+  margin: 3vw auto;
+  text-align:center;
+  background-color:#d74554;
+}
+.content .today_time span{
+  font-size:3.4179vw;
+  color:#fff;
+  line-height:10vw;
+}
+.content .close_overBtn{
+  float:right;
+}
+.close_overBtn a{
+  display:block;
+  /* width:49%; */
+  height:10vw;
+  line-height:10vw;
+  font-size:3vw;
+  color:#fff;
+  text-align:center;
+  margin-top:2.8vw;
+  padding: 0 13vw;
+  background:#c11d00;
+}
+.close_overBtn span{
+  display:block;
+  height:10vw;
+  line-height:10vw;
+  font-size:3.5vw;
+  text-align:center;
+  color:#fff;
+  background:#c11d00;
+}
+.index{
+  float:none !important;
+}
+.index a{
+  margin-top:0;
+}
+.content .game_list{
+  width:97.2656vw;
+  /* height:23.3398vw; */
+  height:100%;
+  margin:0 auto;
+}
+.game_list .list_bg{
+  position:relative;
+  width:100%;
+  /* height:100%; */
+  height:25.7812vw;
+  color:#fff;
+  margin-top:5vw;
+  background:url('./m_image/list_bg.jpg') top center no-repeat;
+  /* background-color:#bab9b9; */
+  background-size:cover;
+}
+.list_bg .teamName{
+  color:#d84958 !important;
+}
+.list_bg .main_team,.list_bg .custom_team{
+  position:absolute;
+  font-size:5vw;
+  color:#ff0000;
+}
+.list_bg .main_team{
+  top:10vw;
+  left:24vw;
+}
+.list_bg .custom_team{
+  top:10vw;
+  right:24vw;
+}
+.list_bg ul{
+  height:25.7812vw;
+  overflow:hidden;
+}
+.list_bg ul li{
+  display:inline-block;
+  width:25.7812vw;
+  height:23.3398vw;
+  margin-top:1vw;
+}
+.list_bg ul li:nth-child(2){
+  width:44vw;
+}
+.list_bg ul li:first-child div:first-child,.list_bg ul li:last-child div:first-child{
+  width:10vw;
+  margin:3.5vw auto 3vw auto;
+}
+.list_bg ul li:first-child div:last-child,.list_bg ul li:last-child div:last-child{
+  text-align:center;
+  font-size:3.5vw;
+  color:#fff;
+}
+.list_bg ul li:nth-child(2) div:first-child{
+  margin:4.5vw auto 0 auto;
+}
+.list_bg ul li:nth-child(2) div{
+  /* width:28vw; */
+  height:5vw;
+  margin:1vw auto;
+}
+.list_bg ul li:nth-child(2) div{
+  text-align:center;
+  font-weight:500;
+  line-height:4vw;
+  font-size:3vw;
+  color:#ef5603;
+}
+.list_bg ul li:nth-child(2) div.play_type span{
+    padding-left:5vw;
+    position:relative;
+}
+.list_bg ul li:nth-child(2) div.play_type span:before{
+  content:'';
+  width:3.9vw;
+  height:3.5156vw;
+  position:absolute;
+  top:0;
+  left:-1vw;
+}
+.list_bg ul li:nth-child(2) div.play_type span.already_play:before{
+  background:url('./m_image/luxiangP.png') top center no-repeat;
+  background-size:cover;
+}
+.list_bg ul li:nth-child(2) div.play_type span.no_play:before{
+  background:url('./m_image/n_luxiangP.png') top center no-repeat;
+  background-size:cover;
+}
+
+.play_type .already_play{
+  color:#ef5603;
+}
+
+.list_bg ul li div img{
+  width:10vw;
+  text-align:center;
+}
+
+.game_type span{
+  display:block;
+  text-align:center;
+  width:44vw;
+  font-size:2.5vw;
+}
+
+
+/*  content 影面播放页面 */
+.content .play_box{
+  width:100%;
+  /* height:15.332vw; */
+}
+.play_box .room{
+  width:100%;
+  height:5vw;
+  background-color:#ea4751;
+}
+.play_box .room div{
+  display:block;
+  width:25vw;
+  height:100%;
+  margin:0 auto;
+}
+.play_box .room div span.room_txt{
+  position:relative;
+  display:block;
+  width:100%;
+  font-size:3vw;
+  color:#fff;
+  padding-left:3vw;
+  text-align:center;
+  line-height:5vw;
+}
+.play_box .room div span.room_txt:before{
+  content:'';
+  position:absolute;
+  top:1.7vw;
+  left:4.539vw;
+  width:1.0742vw;
+  height:1.5625vw;
+  background:url('./m_image/red_arrow.png') top center no-repeat;
+  background-size:cover;
+}
+.play_box .nba_bg{
+  position:relative;
+  height:10.6445vw;
+  background:url('./m_image/m_playBg.jpg') top center no-repeat;
+  background-size:cover;
+}
+.nba_bg .team_info{
+  width:85vw;
+  height:100%;
+  margin:0 auto;
+}
+.team_info ul li{
+  display:inline-block;
+  width:25.3166vw;
+  height:10.6445vw;
+  font-size:4.5vw;
+  color:#fff;
+  text-align:center;
+  line-height:10.6445vw;
+}
+.team_info ul li:nth-child(2){
+  width:30vw;
+  line-height:9vw;
+  font-size:3vw;
+}
+.team_info ul li:nth-child(2) span{
+  letter-spacing: 1vw;
+  /* line-height:3vw; */
+  display:block;
+  height:3vw;
+}
+.team_info .video_box{
+  width:100%;
+}
+video{
+  width:100%;
+}
+
+.nba_bg .btn_screen{
+  width:95%;
+  margin:3vw auto;
+}
+.btn_screen button{
+  border:1px solid #666;
+  border-radius: 1vw;
+  padding:1.2vw;
+  font-size:4vw;
+  font-weight:600;
+  color:#666;
+  text-align:center;
+  background:#fff;
+}
+.btn_screen button + button{
+  margin-left:2vw;
+}
+.btn_active{
+  color:#fff !important;
+  border:1px solid #ea4751 !important;
+  background:#ea4751 !important;
+}
+
+.m_video{position:relative;}
+.m_video .wxid{
+  position:absolute;
+  bottom: 2.4414vw;
+  left:33.4414vw;
+  font-size:3vw;
+  color:#FFFF33;
+  z-index: 2147483647;
+  padding: .2vw;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.wxid span{
+  color:#FFFF33;
+}
+
+:-webkit-full-screen video {width: 100%;height: 100%;}
+:-moz-full-screen video {width: 100%;height: 100%;}
+:full-screen video {width: 100%;height: 100%;}
+
+
+
+/*  RWD 选单收合 ------------------------------------------------------  */
+body,.menu-btn {
+   position: relative;
+   left: 0;
+}
+body,.menu-btn,nav > ul {
+   transition: left .45s cubic-bezier(.42,.97,.52,1.49);
+}
+body.body-menu-open {
+   left: 27.3437vw; /* according to the menu width */
+	cursor: pointer;
+	overflow-x: hidden;
+}
+
+nav > ul {
+   position: absolute;
+   top: -8.19531vw;
+   left: -27.3437vw;
+	width: 27.1vw;
+	background-color: #d74554;
+	/* height: 100%; */
+  min-height: 100vh;
+	/* box-shadow: inset -5px 0 10px #333; */
+	overflow-x: hidden;
+  overflow-y: scroll;
+}
+nav .menu .menu_topic{
+  height:8.1vw;
+  border-bottom:2px solid #d74554;
+  background-color:#000;
+}
+nav .menu .menu_topic span{
+  font-size:2.5vw;
+  color:#fff;
+  padding:2.5vw 0;
+  text-align:center;
+  display:block;
+}
+nav a.menu-btn{
+
+  margin:2vw 0 0 3vw;
+  width:7.8125vw;
+}
+nav ul.menu .main_sport{
+  letter-spacing: 2.5vw;
+}
+.menu-btn:before,
+.menu-btn:after {
+   font-size: 85px;
+   color: #d74554;
+   line-height: 1;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+.menu-btn:before {
+   content: '\02261';
+}
+.menu-btn-open:after {
+   content: '\02A35';
+   left: -0.5859vw;
+}
+.menu-btn-open:before {
+   content: none;
+}
+
+/* MENU ITEMS */
+.menu li a {
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 2.7vw 1.9531vw;
+	color: #fff;
+	position: relative;
+}
+.menu li a span.sub_menu{
+  color:#d74554;
+}
+.menu > li {
+	border-top: 1px solid #fff;
+}
+.menu > li > a:hover {
+   background-color: #f18590;
+}
+.menu > li:first-child {
+  border-style:none;
+}
+
+/* DROPDOWN */
+.menu li ul {
+   background-color: #fff;
+	padding-left: 3.4179vw;
+	display: none;
+}
+.menu li li a {
+	font-size: 90%;
+	padding: 0.9765vw 1.9531vw;
+	position: relative;
+	z-index: 1;
+}
+.menu li li a:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: -99999px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-top: 1px solid #d74554;
+}
+.menu li li a:hover:after {
+	background-color:#f18590;
+}
+
+/* PLUS MINUS SIGN */
+.caret {
+	position: absolute;
+	right: 0;
+	color: #fff;
+	width: 7vw;
+	top: 0;
+	bottom: 0;
+	padding-top: 2vw;
+	text-align: center;
+	font-size: 2.5vw;
+	cursor: pointer;
+}
+.caret-up:after {
+	content: '+';
+}
+.caret-down:after {
+	content: '-';
+}
+.menu li li .caret {
+	padding-top: 3px;
+}
+.menu-btn:before,
+.menu-btn:after,
+.caret:after {
+	font-family: 'san-serif';
+}
+
+/* footer */
+footer{
+  height:18vw;
+  overflow:hidden;
+  background:#d74554;
+}
+footer span{
+  display:block;
+  color:#fff;
+  font-size:2.5vw;
+  margin-top:7vw;
+  text-align:center;
+}
+
+
+/*  回放區塊 -- 影片 相關設定 */
+.pc_wrap .back_video{
+  height:9.2vw;
+  border-top:1px solid #d74554;
+  background:rgba(255,255,255,0.8);
+  clear:both;
+  overflow:hidden;
+}
+.pc_wrap .tag{
+  position:relative;
+}
+.pc_wrap .tag:before{
+  content:'影片赛事回放';
+  position:absolute;
+  top:-6.1vw;
+  left:0;
+  width:17vw;
+  height:6vw;
+  color:#fff;
+  background-color:#d74554;
+  font-size:2vw;
+  line-height:6vw;
+  text-align:center;
+}
+
+.headNews{
+  width:98%;
+  padding:3vw;
+  margin:3vw auto 4.5vw auto;
+  border:1px solid #d74554;
+  background:rgba(255,255,255,0.8);
+  clear:both;
+}
+.headNews .news_topic{
+  overflow:hidden;
+}
+.news_topic ul.back_movie li{
+  display:block;
+  float:left;
+  width:32%;
+  height:20vw;
+  margin:1% 0 0 1%;
+  background:url('./m_image/kobe.jpg') top center no-repeat;
+  background-size:cover;
+}
+.news_topic ul.back_movie li a{
+ color:#fff;
+ padding:0 0 0 1.5vw;
+ font-size:2vw; 
+}
+
+
+.headNews .news_topic h1,.headNews .news_topic h2{
+  font-size:3vw;
+  letter-spacing: 1.5vw;
+  color:#ff0000;
+  padding-bottom:3.5vw;
+  float:left;
+}
+.headNews .news_topic h1,.headNews .news_topic h2{
+  padding-top:3.2vw;
+}
+.news_topic a{
+  float:right;
+  display:block;
+  font-size:2vw;
+  color:#fff;
+  padding:1.8vw;
+  margin-top:2vw;
+  background:rgba(215,69,84,0.7);
+  /* background-color:#d74554; */
+}
+.headNews ul li{
+  height:6.5vw;
+  border-top:1px solid #b9b8b8;
+}
+.headNews ul li ~ li{
+  border-bottom:1px solid #b9b8b8;
+}
+.headNews ul li a{
+  position:relative;
+  font-size:3vw;
+  line-height:6.5vw;
+  color:#666;
+  padding-left:4vw;
+}
+.headNews ul li a::before{
+  content:'★';
+  position:absolute;
+  top:0;
+  left:0;
+  width:2vw;
+  height:2vw;
+} 
+
+
+.video{
+  padding:0;
+  border-style:none;
+}
+.video ul li a{
+  float:none;
+  padding:0;
+  margin-top:0;
+}
+.video ul li a::before{
+  content:'';
+}
+
+
+
+.find_nav {
+  width: 100%;
+  height: 9.2vw;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 1px solid #ddd;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+.find_nav_left {
+  height: 9.2vw;
+  position: relative;
+  overflow: hidden;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+.find_nav_list {
+  position: absolute;
+  left: 0;
+}
+.find_nav_list ul {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+}
+.find_nav_list ul li {
+  display: inline-block;
+  padding: 0;
+  margin:0 1.9531vw;
+}
+.find_nav_list ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 9.2vw;
+  font-size: 2.7vw;
+  text-align: center;
+  color: #333;
+}
+.find_nav_cur a {
+  color: #d74554 !important;
+}
+.find_nav_list a.actives{ 
+  color:#C00
+}
+.sideline {
+  display: block;
+  position: absolute;
+  border: 0;
+  height: 0.5vw;
+  background-color: #d74554;
+  left: 0;
+  top: 8.5vw;
+  pointer-events: none;
+}
+
+/*   mask box setting  */
+.mask_box{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow-y:hidden;
+  background: rgba(0, 0, 0, 0.85);
+  /* display:none; */
+  z-index:999;
+}
+.mask_box .mask_box_inner{
+  position:relative;
+  width:90%;
+  top:15vw;
+  margin:0 auto;
+  /* left:50%; */
+  /* transform:translate(-50%,-50%); */
+}
+.mask_box .mask_box_inner a{
+  width:6vw;
+  height:6vw;
+  position:absolute;
+  top:-10vw;
+  right:0;
+}
+
+
+@media screen and (max-width:1024px) {
+  /* 上方跑马灯 */
+  .head_marquee{
+    width:100%;
+    height:7.8125vw;
+  }
+  .head_marquee .mar_txt{
+    font-size:3.2226vw;
+    margin:2vw auto;
+  }
+  .head_marquee .mar_txt:before{
+    width:4.1992vw;
+    height:4.1992vw;
+    top:-0.1718vw;
+    left:-5.371vw;
+    background-size:cover;
+  }
+
+  .total_wrap{
+    width:100%;
+    /* height:100%; */
+    /* height:200vmin; */
+    background-size:contain;
+    /* 讓背景隨視窗縮放 最大只到原圖尺寸*/
+  }
+  .m_hight{height:120vw}
+  .pc_wrap{max-width:100%;}
+  header{
+    position:relative;
+    width:100%; 
+    /* height:53vw;  */
+    border:2px solid #00d2ff;
+    border: 1px solid hsla(0, 0%, 100%, 0);
+  }
+  header .m_logo{
+    width:25.1953vw;
+    height:22.5585vw;
+    float:right;
+    margin:5vw 5vw 10vw 0;
+  }
+  .h_video{
+    height:27vw !important;
+  }
+  .menu li a{
+    font-size:2.5vw;
+  }
+  .menu li li a{
+    font-size:2.5vw;
+    padding:2.2vw 5vw;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .menu li li a{
+    font-size:2.2vw;
+    padding:2vw 7vw;
+  }
+  .caret{
+    padding-top:2.5vw;
+  }
+}
+@media screen and (max-width:768px){
+  .main_btn ul li:nth-child(3),.main_btn ul li:nth-child(5){
+    margin-left:0;
+  }
+  /*  RWD 选单收合  */
+  body.body-menu-open {
+    left:27.3437vw;
+  }
+  nav > ul {
+    top:-8.24vw;
+    left:-27.44vw;
+    width:27.3437vw;
+  }
+  nav a.menu-btn{
+    /* top:-109.9218vw;
+    left:2.7343vw; */
+    width:7.8125vw;
+  }
+  .menu-btn:before,
+  .menu-btn:after {
+   font-size: 8.3007vw;
+  }
+  .menu li a{
+    font-size:2.8vw;
+  }
+  .menu li li a{
+    font-size:2.8vw;
+    padding:2vw 4vw;
+  }
+  .caret {
+    padding-top: 2.3vw;
+  }
+  .news_topic ul.back_movie li{
+    width:49%;
+    height:20vw;
+    margin:1% 0 0 1%;
+  }
+}
+@media screen and (max-width:640px){
+  nav > ul {
+    top:-8.24vw;
+  }
+  header .main_btn ul li{
+    width:38vw;
+  }
+  .menu li a{
+    font-size:2.8vw;
+  }
+  .menu li li a{
+    font-size:2.8vw;
+  }
+  .menu li a span{
+    /* font-size:1.3vw; */
+  }
+}
+@media screen and (max-width: 480px) {
+  nav > ul {
+    top:-8.24vw;
+    left:-27.5vw;
+  }
+  nav ul.menu .main_sport{
+    letter-spacing:2vw;
+  }
+  .list_bg ul li{
+    width:24.78vw
+  }
+  .main_btn ul li:nth-child(3),.main_btn ul li:nth-child(5){
+    margin-left:1.5vw;
+  }
+  header .main_btn ul li{
+    width:37vw;
+  }
+  .team_info ul li:nth-child(2){
+    width:30vw;
+  }
+  .menu li a{
+    font-size:3.5vw;
+  }
+  .menu li li a{
+    font-size:3.5vw;
+    padding:2.5vw 1.9531vw 2.5vw 4vw;
+  }
+  .news_topic ul.back_movie li{
+    width:100%;
+    height:40vw;
+    margin-top:1%;
+  }
+  .headNews ul li a{
+    line-height:10vw;
+  }
+  .news_topic a{
+    font-size:3.5vw !important;
+  }
+}
+@media screen and (max-width: 414px) {
+  nav > ul {
+    top:-8.6vw;
+  }
+  nav ul.menu .main_sport{
+    letter-spacing:2vw;
+  }
+  .menu li a{
+    font-size:3.5vw;
+  }
+  .menu li li a{
+    font-size:3.5vw;
+    /* padding:2.5vw 0; */
+  }
+  .caret {
+    padding-top: 3.3vw;
+  }
+  .caret-up:after{
+    position:relative;
+    top:-0.9vw;
+  }
+}
+@media screen and (max-width:375px) {
+  .main_btn ul li:nth-child(3),.main_btn ul li:nth-child(5){
+    margin-left:1vw;
+  }
+  .menu li a{
+    font-size:3.5vw;
+  }
+  .menu li li a{
+    font-size:3.5vw;
+  }
+  nav ul.menu .main_sport {
+    letter-spacing: 2vw;
+  }
+  .caret {
+    padding-top: 3.3vw;
+  }
+}
+@media screen and (max-width:320px) {
+  .close_overBtn a{
+    padding: 0 10vw;
+  }
+}
+
+.team ul li span{
+  display:inline-block;
+}
+#link-img {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PONY直播网</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/m_custom.css">
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/jsonData.js"></script> -->
+	<style type="text/css">
+	</style>
+</head>
+<body>
+		<!--  mask video  -->
+		<div class="mask_box">
+			<div class="mask_box_inner">
+				<a href="javascript:void(0)" class="closeBtn">
+					<img src="assets/css/m_image/close.png"/>
+				</a>
+				<video width='100%' muted autoplay loop controls>
+					<source src="assets/video/video1.mp4" type="video/mp4">
+					<source src="movie.ogg" type="video/ogg">
+				</video>
+			</div>
+		</div>
+		<div class="total_wrap">
+				<div class="head_marquee">
+					<div class="mar_txt">音速直播..影像直播影像直播影像直播</div>
+				</div>
+				<div class="pc_wrap">
+					<header class="header">
+						<div class="m_logo">
+							<a href="#"><img src="assets/css/m_image/m_logo.png"></a>
+						</div>
+						<div class="headNews">
+							<!-- 首頁新聞區塊 -->
+							<div class="close_overBtn index">
+								<span>新闻区块  /  LAST NEWS</span>
+							</div>
+							<div class="news_topic">
+								<h1>篮|球|新|闻</h1>
+								<a href="javascript:void(0)" class="index_more" data-more="NBA">+ 更多</a>
+							</div>
+							<ul class="basketball">
+								<!-- <li><a href="javascript:void(0)">这是一笔篮球消息看看吧这是一笔篮球消息看看吧</a></li>
+								<li><a href="javascript:void(0)">这是一笔篮球消息看看吧这是一笔篮球消息看看吧</a></li>
+								<li><a href="javascript:void(0)">这是一笔篮球消息看看吧这是一笔篮球消息看看吧</a></li> -->
+							</ul>
+							<div class="news_topic footNews">
+								<h1>足|球|新|闻</h1>
+								<a href="javascript:void(0)" class="index_more" data-more="最新">+ 更多</a>
+							</div>
+							<ul class="football">
+								<li><a href="javascript:void(0)">这是一笔篮球消息看看吧这是一笔篮球消息看看吧</a></li>
+								<li><a href="javascript:void(0)">这是一笔篮球消息看看吧这是一笔篮球消息看看吧</a></li>
+								<li><a href="javascript:void(0)">这是一笔篮球消息看看吧这是一笔篮球消息看看吧</a></li>
+							</ul>
+						</div>
+						<!-- 隐藏的新btn -->
+						<nav>
+							<a href="#" class="menu-btn" id="menu-trigger"></a>
+							<ul class="menu">
+								<div class="menu_topic">
+									<span>体育直播</span>
+								</div>
+								<li class="main_sport"><a href="m_index.html">全部</a></li>
+								<li class="main_sport"><a href="m_index.html">篮球</a></li>
+								<li class="main_sport"><a href="m_index.html">足球</a></li>
+								<li class="main_sport"><a href="m_index.html">热门</a></li>
+								<li class="main_sport"><a href="m_video.html">賽事回放</a></li>
+								<div class="menu_topic">
+									<span>体育新闻</span>
+								</div>
+								<li class="sub_box">
+									<a href="javascript:void(0)">篮球新闻</a>
+									<ul>
+										<li><a href="javascript:void(0)" data-id="NBA"><span class="sub_menu">NBA消息</span></a></li>
+										<li><a href="javascript:void(0)" data-id="CBA"><span class="sub_menu">CBA消息</span></a></li>
+									</ul>
+								</li>
+								<li class="sub_box">
+									<a href="javascript:void(0)">足球新闻</a>
+									<ul>
+										<li><a href="javascript:void(0)" data-id="china"><span class="sub_menu">中超新闻</span></a></li>
+										<li><a href="javascript:void(0)" data-id="eng"><span class="sub_menu">英超新闻</span></a></li>
+										<li><a href="javascript:void(0)" data-id="east"><span class="sub_menu">西甲新闻</span></a></li>
+										<li><a href="javascript:void(0)" data-id="der"><span class="sub_menu">德甲新闻</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+					<!-- content  -->
+					<section class="content">
+						<!-- 赛事列表  -->
+						<div class="game_list">
+							<!-- 主要資料區塊 -->
+							<div class="data_box">
+								<div class="top_info">
+									<div class="today_time"><span>今天 04月22日 周三</span></div>
+									<div class="close_overBtn">
+											<a href="javascript:void(0)">隐藏已结束赛事</a>
+									</div>
+								</div>
+								<!-- 赛事1  -->
+								<a href="javascript:void(0)" class="game_box already_over">
+									<div class="list_bg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="no_play">已結束</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事2 -->
+								<a href="javascript:void(0)" class="game_box already_over">
+									<div class="list_bg ">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="no_play">已結束</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事3 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg listAddbg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">直播中</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事4 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg listAddbg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">未開播</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事5 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">未開播</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事6 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">未開播</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事7 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">未開播</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事8 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">未開播</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事9 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">未開播</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+								<!-- 赛事10 -->
+								<a href="javascript:void(0)" class="game_box">
+									<div class="list_bg">
+										<div class="main_team">98</div>
+										<div class="custom_team">108</div>
+										<ul>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/huren.png"></div>
+												<div class="teamName">湖人队</div>
+											</li>
+											<li>
+												<div class="play_type"><span class="already_play">未開播</span></div>
+												<div class="game_type"><span>NBA官方篮球赛</span></div>
+												<div class="play_time"><span>18 ： 00</span></div>
+											</li>
+											<li>
+												<div class="team_logo"><img src="assets/css/image/gongniu.png"></div>
+												<div class="teamName">公牛队</div>
+											</li>
+										</ul>
+									</div>
+								</a>
+							</div><!-- end of the data_box -->
+						</div>
+					</section>
+				</div>
+				<footer class="">
+					<span>Copyright@ 2017 音速直播 soniclive.cn  ALL Rights Reserved</span>
+				</footer>
+			</div>
+	<!-- total wrap end -->
+</body>
+
+<script type="text/javascript" src="assets/js/sonicMobile.js"></script>
+</html>

@@ -1,0 +1,34 @@
+[
+  {
+    "1":{
+      "id": "01",
+      "typeName": "投注风华夜1",
+      "saveNum": 1000,
+      "sendNum": 88,
+      "stopTime": "2016.07.10 中午12時",
+      "actTime": "北京时间2017年12月01日中午12时 至 2018年01月01日中午12时",
+      "actDetail": "每周全馆投注5,000元以上，即可获得高达3888元彩金！",
+      "proTxt": "恭喜您获得存1000送88存款优惠,打码5倍",
+      "ext":"0",
+      "website":"http://iyb88.biz/",
+      "rule1":"<li><span class='gold_txt'>1.AA请于活动有效时间结束前领取,否则视同放弃</span></li><li><span class='gold_txt'>2.优惠一经派发即无法放弃,取消或更换</span></li><li><span class='gold_txt'>3.优惠打码计算方式 = 本金 + (指定存款金额+优惠)*5倍打码</span></li><li><span class='gold_txt'>4.此优惠彩金仅可领取一次</span></li><li><span class='gold_txt'>5.此优惠仅为收到此邮件/简讯/站内信之会员可获得,其余皆无效</span></li>",
+      "get": 0
+    }
+  },
+  {
+    "2":{
+      "id": "02",
+      "typeName": "投注风华夜2",
+      "saveNum": 388,
+      "sendNum": 88,
+      "stopTime": "2017.07.10 中午12時",
+      "actTime": "北京时间2017年12月01日中午12时 至 2018年01月01日中午12时",
+      "actDetail": "每周全馆投注5,000元以上，即可获得高达3888元彩金！",
+      "proTxt": "恭喜您获得彩金388元，打码5倍",
+      "ext":"1",
+      "website":"http://iyb88.biz/",
+      "rule1":"<li><span class='gold_txt'>1.BB请于活动有效时间结束前领取,否则视同放弃</span></li><li><span class='gold_txt'>2.优惠一经派发即无法放弃,取消或更换</span></li><li><span class='gold_txt'>3.优惠打码计算方式 = 本金 + (指定存款金额+优惠)*5倍打码</span></li><li><span class='gold_txt'>4.此优惠彩金仅可领取一次</span></li><li><span class='gold_txt'>5.此优惠仅为收到此邮件/简讯/站内信之会员可获得,其余皆无效</span></li>",
+      "get": 1
+     }
+    }
+]
